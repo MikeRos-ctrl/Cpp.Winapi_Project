@@ -1,0 +1,522 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (España, alfabetización internacional) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESN)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MODERN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+Ventana_Principal DIALOGEX 0, 0, 311, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Ingresar",btn_ingresar,240,55,64,14
+    EDITTEXT        edc_usuario,110,43,106,12,ES_AUTOHSCROLL
+    EDITTEXT        edc_contrasenia,110,75,106,12,ES_AUTOHSCROLL
+    LTEXT           "Registrarse:",IDC_STATIC,143,107,81,13
+    LTEXT           "Nombre Usuario:",IDC_STATIC,23,43,81,13
+    LTEXT           "Contraseña:",IDC_STATIC,23,75,81,13
+    LTEXT           "Iniciar Seccion",IDC_STATIC,138,20,81,13
+    PUSHBUTTON      "Registrarse",btn_registrarse,133,126,64,14
+END
+
+Ventana_Para_Registrarse DIALOGEX 0, 0, 311, 178
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",btn_aceptar,79,146,50,14
+    PUSHBUTTON      "Regresar",btn_regresar,173,146,50,14
+    LTEXT           "Nuevo Nombre De Usuario:",IDC_STATIC,32,44,90,10
+    LTEXT           "Aqui Se Podra Registrar",IDC_STATIC,112,10,90,10
+    LTEXT           "Nueva Contraseña:",IDC_STATIC,32,77,90,10
+    LTEXT           "Nombre Completo:",IDC_STATIC,32,112,90,10
+    EDITTEXT        edc_registro_usuario,155,44,91,13,ES_AUTOHSCROLL
+    EDITTEXT        edc_registro_contrasenia,154,77,91,13,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        edc_registro_nombrecompleto,154,112,91,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "(Nombre de Usuario Unico)",IDC_STATIC,107,20,90,10
+END
+
+Ventana_General DIALOGEX 0, 0, 1007, 235
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         Lista_M,197,27,191,125,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Numero Celular:",IDC_STATIC,401,79,54,9
+    LTEXT           "Especialidad:",IDC_STATIC,401,113,54,9
+    LTEXT           "Foto",IDC_STATIC,440,167,15,9
+    LTEXT           "Numero Empleado:",IDC_STATIC,401,46,71,9
+    LTEXT           "Turno Trabajo:",IDC_STATIC,401,13,56,9
+    LTEXT           "Datos Mecanicos",IDC_STATIC,267,13,72,9
+    LTEXT           "Dias Laborales:",IDC_STATIC,252,183,54,9
+    EDITTEXT        edc_dias_laborales,203,198,230,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_ver_turnos,482,12,127,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_ver_numero,488,46,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_ver_especialidad,488,111,66,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_mostrar_numero,488,79,66,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",Fotito,"Static",SS_BITMAP | SS_CENTERIMAGE,462,138,89,68,WS_EX_STATICEDGE
+    PUSHBUTTON      "Editar Mecanico",Edc_Editar_Mecanico,216,160,73,12
+    PUSHBUTTON      "Eliminar Mecanico",Edc_Eliminar_Mecanico,311,160,76,12
+    LTEXT           "Datos Clientes",IDC_STATIC,691,14,72,9
+    LISTBOX         Lista_Clientes,617,27,191,125,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Placas del Carro:",IDC_STATIC,820,130,68,9
+    LTEXT           "Marca del Carro:",IDC_STATIC,617,198,68,9
+    LTEXT           "Modelo del Carro:",IDC_STATIC,817,152,68,9
+    LTEXT           "Año del Carro:",IDC_STATIC,781,198,68,9
+    LTEXT           "Kilometraje:",IDC_STATIC,820,105,68,9
+    LTEXT           "Numero de Cliente:",IDC_STATIC,820,78,68,9
+    LTEXT           "Direccion de Cliente:",IDC_STATIC,820,51,68,9
+    LTEXT           "Telefono del Cliente:",IDC_STATIC,820,27,68,9
+    EDITTEXT        edc_telefono_clientexd,902,25,78,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Editar Cliente",btn_Editar_Cliente,627,161,73,12
+    PUSHBUTTON      "Eliminar Cliente",btn_eliminar_cliente,723,161,73,12
+    EDITTEXT        direccion_clientexd,902,52,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_id_clientexd,902,78,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_kilometraje_cliente_xd,902,105,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_placas_cliente_carro_xd,902,128,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_carro_marca_clientexd,681,198,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_carro_anio_cliente,842,198,78,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        modelo_carro_cliente_xd,902,149,78,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         Lista_packs_show,22,27,134,125,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,74,161,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT3,74,179,28,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,74,198,79,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Datos Paquetes",IDC_STATIC,66,13,72,9
+    LTEXT           "Numero Paquete",IDC_STATIC,12,162,62,9
+    LTEXT           "Costo:",IDC_STATIC,12,178,39,9
+    LTEXT           "Descripccion:",IDC_STATIC,12,198,45,9
+    PUSHBUTTON      "Eliminar Paquete",IDC_BUTTON1,111,160,81,11
+END
+
+Ventana_Registrar_Paquetes_Servicios DIALOGEX 0, 0, 227, 200
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",btn_add_packs,54,162,50,14
+    LTEXT           "Aqui podra registrar los paquetes de servicio",IDC_STATIC,25,11,150,14
+    LTEXT           "Descripccion:",IDC_STATIC,24,71,44,14
+    LTEXT           "Clave:",IDC_STATIC,24,44,23,14
+    LTEXT           "Costo:",IDC_STATIC,24,101,23,14
+    EDITTEXT        edc_clave_paquetes,79,44,88,13,ES_AUTOHSCROLL
+    EDITTEXT        edc_costo_paquetes,79,101,88,13,ES_AUTOHSCROLL
+    EDITTEXT        edc_descripccion_paquetes,79,71,88,13,ES_AUTOHSCROLL
+    LTEXT           "(Las claves deben ser unicas)",IDC_STATIC,43,22,105,14
+    LTEXT           "Id:",IDC_STATIC,24,137,17,14
+    EDITTEXT        edc_id_packs,79,132,88,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Regresar",btn_regresar_packs,131,162,50,14
+END
+
+Ventana_Registrar_Mecanicos DIALOGEX 0, 0, 435, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",btn_aceptar_mecanicos,130,189,50,14
+    PUSHBUTTON      "Regresar",btn_regresar_mecanicos,297,189,50,14
+    PUSHBUTTON      "Cargar Foto",btn_cargaro_foto_mecanicos,277,126,50,14
+    LTEXT           "Aqui Podras Dar de Alta a los Mecanicos",IDC_STATIC,135,10,151,21
+    LTEXT           "Turno Laboral:",IDC_STATIC,27,90,54,10
+    LTEXT           "Nombre Completo:",IDC_STATIC,27,66,67,10
+    LTEXT           "Numero de Empleado:",IDC_STATIC,27,42,77,11
+    LTEXT           "Especialidades:",IDC_STATIC,27,140,54,13
+    LTEXT           "Dias Laborales:",IDC_STATIC,27,166,51,11
+    LTEXT           "Celular:",IDC_STATIC,27,115,31,11
+    EDITTEXT        edc_num_mecanico,107,42,126,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_full_name_mecanico,107,66,126,12,ES_AUTOHSCROLL
+    EDITTEXT        edc_celular_mecanico,107,116,126,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Lunes",lunes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,107,166,32,12
+    CONTROL         "Martes",martes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,148,166,36,12
+    CONTROL         "Miercoles",miercoles,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,190,166,43,12
+    CONTROL         "Jueves",jueves,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,244,166,33,12
+    CONTROL         "Viernes",viernes,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,287,166,39,12
+    CONTROL         "",Cargar_Foto_Mecanico,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_SUNKEN | WS_BORDER,261,42,84,74
+    COMBOBOX        cmb_especialidades_mecanicos,107,140,126,119,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        cmb_turno_mecanicos,107,90,126,119,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Sabado",sabado,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,333,166,39,12
+    CONTROL         "Domingo",domingo,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,379,166,39,12
+END
+
+Ventana_Registro_Clientes DIALOGEX 0, 0, 369, 204
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",btn_aceptar_cliente,47,168,50,14
+    PUSHBUTTON      "Regresar",btn_regresar_cliente,252,167,50,14
+    LTEXT           "Registro de Clientes",IDC_STATIC,145,7,65,14
+    LTEXT           "Nombre Completo:",IDC_STATIC,15,60,65,14
+    LTEXT           "Placas del Vehiculo:",IDC_STATIC,15,86,65,14
+    LTEXT           "Kilometraje:",IDC_STATIC,192,60,65,14
+    LTEXT           "Marca:",IDC_STATIC,15,111,65,14
+    LTEXT           "Año de Vehiculo:",IDC_STATIC,192,35,65,14
+    LTEXT           "Modelo:",IDC_STATIC,165,133,39,9
+    LTEXT           "Telefono Celular:",IDC_STATIC,192,86,65,14
+    LTEXT           "Direccion Completa:",IDC_STATIC,192,111,68,14
+    EDITTEXT        edc_nombre_cliente,85,60,76,12,ES_AUTOHSCROLL
+    LTEXT           "Numero de Cliente:",IDC_STATIC,15,35,70,14
+    EDITTEXT        edc_numero_cliente,85,35,76,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_placas_cliente,85,86,76,12,ES_AUTOHSCROLL
+    EDITTEXT        edc_marca_cliente,85,111,76,12,ES_AUTOHSCROLL
+    EDITTEXT        edc_modelo_carrocliente,141,151,76,12,ES_AUTOHSCROLL
+    EDITTEXT        edc_anio_vehiculo_cliente,259,35,76,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        edc_km_carro_cliente,259,60,76,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        edc_telefono_cliente,259,86,76,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        edc_direccion_cliente,259,111,76,12,ES_AUTOHSCROLL
+    LTEXT           "(7 digitos)",IDC_STATIC,29,95,44,14
+    LTEXT           "Km.",IDC_STATIC,340,60,16,14
+END
+
+Ventana_registro_citas DIALOGEX 0, 0, 582, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",aceptar_cita,145,172,50,14
+    PUSHBUTTON      "Regresar",regresar_cita,292,172,50,14
+    LISTBOX         Lista_Citas_Mecanicos,294,47,142,114,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         Lista_Citas_Clientes,25,47,143,114,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre Clientes:",IDC_STATIC,72,26,66,8
+    LTEXT           "Nombre Mecanicos:",IDC_STATIC,339,26,66,8
+    LTEXT           "Tipo de Servicio que Necesita",IDC_STATIC,183,49,103,8
+    COMBOBOX        cmb_especialidades_mecanicos_citas,183,63,75,149,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",Set_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,183,98,75,13
+    LTEXT           "Fecha:",IDC_STATIC,183,88,24,8
+    CONTROL         "",Set_Time,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,183,136,75,13
+    LTEXT           "Hora:",IDC_STATIC,183,127,24,8
+    EDITTEXT        IDC_EDIT1,449,62,75,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Especialidad del Mecanico:",IDC_STATIC,449,49,92,8
+    LTEXT           "Foto:",IDC_STATIC,449,127,24,8
+    CONTROL         "",Fotito_Mecanico,"Static",SS_BITMAP | SS_CENTERIMAGE,449,136,75,56,WS_EX_STATICEDGE
+    LTEXT           "Horario Laboral:",IDC_STATIC,449,88,60,8
+    EDITTEXT        IDC_EDIT2,449,98,133,13,ES_AUTOHSCROLL | ES_READONLY
+END
+
+Consulta_Citas DIALOGEX 0, 0, 371, 189
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar",btn_regresar_mostrar_cita,84,154,50,14
+    LTEXT           "Consulta de Citas",IDC_STATIC,154,7,63,12
+    LTEXT           "Fecha:",IDC_STATIC,19,44,26,12
+    LTEXT           "Cliente:",IDC_STATIC,257,18,31,12
+    LTEXT           "Mecanico:",IDC_STATIC,19,97,34,12
+    EDITTEXT        edc_mostrar_fecha_cita,62,44,106,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        edc_mostrar_mecanico_cita,62,97,106,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Hora:",IDC_STATIC,19,71,26,12
+    EDITTEXT        edc_mostrar_hora_cita,62,71,106,12,ES_AUTOHSCROLL | ES_READONLY
+    LISTBOX         Lista_Citas,207,31,138,102,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Cancelar Cita",IDOK,245,154,50,14
+    LTEXT           "Servicio:",IDC_STATIC,19,121,34,12
+    EDITTEXT        edc_mostrar_servicio_cita,62,120,106,12,ES_AUTOHSCROLL | ES_READONLY
+END
+
+heap DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Ordenar",ordenar_heapsort,83,156,50,14
+    PUSHBUTTON      "Regresar",ultimo_regresar_xd,183,156,50,14
+    LISTBOX         list_after_ordenar_mecanicos,170,55,103,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Antes de ordenar",IDC_STATIC,49,24,72,13
+    LTEXT           "Despues de ordenar",IDC_STATIC,184,24,72,13
+    LISTBOX         list_before_ordenar_mecanicos2,26,55,103,79,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    Ventana_Principal, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+        HORZGUIDE, 43
+        HORZGUIDE, 75
+    END
+
+    Ventana_Para_Registrarse, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        VERTGUIDE, 32
+        VERTGUIDE, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+        HORZGUIDE, 44
+        HORZGUIDE, 77
+        HORZGUIDE, 112
+        HORZGUIDE, 146
+    END
+
+    Ventana_General, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 1000
+        VERTGUIDE, 74
+        VERTGUIDE, 102
+        VERTGUIDE, 437
+        VERTGUIDE, 628
+        VERTGUIDE, 722
+        BOTTOMMARGIN, 228
+        HORZGUIDE, 17
+        HORZGUIDE, 27
+        HORZGUIDE, 152
+        HORZGUIDE, 161
+        HORZGUIDE, 171
+        HORZGUIDE, 198
+    END
+
+    Ventana_Registrar_Paquetes_Servicios, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 24
+        VERTGUIDE, 79
+        VERTGUIDE, 207
+        BOTTOMMARGIN, 193
+        HORZGUIDE, 44
+        HORZGUIDE, 76
+        HORZGUIDE, 108
+        HORZGUIDE, 145
+        HORZGUIDE, 162
+    END
+
+    Ventana_Registrar_Mecanicos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 428
+        VERTGUIDE, 27
+        VERTGUIDE, 107
+        VERTGUIDE, 233
+        VERTGUIDE, 244
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+        HORZGUIDE, 42
+        HORZGUIDE, 66
+        HORZGUIDE, 90
+        HORZGUIDE, 116
+        HORZGUIDE, 140
+        HORZGUIDE, 166
+    END
+
+    Ventana_Registro_Clientes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 362
+        VERTGUIDE, 27
+        VERTGUIDE, 97
+        VERTGUIDE, 204
+        VERTGUIDE, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+        HORZGUIDE, 35
+        HORZGUIDE, 60
+        HORZGUIDE, 86
+        HORZGUIDE, 111
+        HORZGUIDE, 135
+        HORZGUIDE, 168
+    END
+
+    Ventana_registro_citas, DIALOG
+    BEGIN
+        VERTGUIDE, 25
+        VERTGUIDE, 183
+        VERTGUIDE, 258
+        VERTGUIDE, 317
+        VERTGUIDE, 449
+        VERTGUIDE, 524
+        BOTTOMMARGIN, 216
+        HORZGUIDE, 26
+        HORZGUIDE, 57
+        HORZGUIDE, 75
+        HORZGUIDE, 88
+        HORZGUIDE, 111
+        HORZGUIDE, 136
+        HORZGUIDE, 172
+    END
+
+    Consulta_Citas, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        VERTGUIDE, 19
+        VERTGUIDE, 62
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+        HORZGUIDE, 53
+        HORZGUIDE, 80
+        HORZGUIDE, 154
+    END
+
+    heap, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+        HORZGUIDE, 24
+        HORZGUIDE, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+Ventana_Principal AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_Para_Registrarse AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_General AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_Registrar_Paquetes_Servicios AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_Registrar_Mecanicos AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_Registro_Clientes AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Ventana_registro_citas AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+Consulta_Citas AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+heap AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "pestaña1"
+    BEGIN
+        MENUITEM "pestaña1",                    Pestania_1
+    END
+    POPUP "pestaña2"
+    BEGIN
+        MENUITEM "pestaña2",                    Pestania_2
+    END
+    POPUP "pestaña3"
+    BEGIN
+        MENUITEM "pestaña3",                    Pestania_3
+    END
+    POPUP "pestaña4"
+    BEGIN
+        MENUITEM "pestaña4",                    Pestania_4
+    END
+    POPUP "pestaña5"
+    BEGIN
+        MENUITEM "pestaña5",                    Pestania_5
+    END
+    POPUP "pestaña6"
+    BEGIN
+        MENUITEM "Pestania_6",                  Pestania_6
+        MENUITEM "Pestania_6_1",                pestania_6_1
+    END
+    POPUP "salir"
+    BEGIN
+        MENUITEM "salirxd",                     salir_sistema_
+    END
+END
+
+#endif    // Español (España, alfabetización internacional) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

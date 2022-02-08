@@ -1,0 +1,45 @@
+﻿  Main.cpp
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(118,18): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(118,18): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(167,45): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(167,45): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(189,32): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(189,32): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(233,47): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(233,47): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(239,40): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(239,40): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(246,30): warning C4244: 'inicializando': conversión de 'LRESULT' a 'int'; posible pérdida de datos
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(247,28): warning C4244: 'inicializando': conversión de 'LRESULT' a 'int'; posible pérdida de datos
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(347,34): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(347,34): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(356,30): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(356,30): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(436,37): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(436,37): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(446,33): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(446,33): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(517,33): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(517,33): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(559,55): warning C4267: 'inicializando': conversión de 'size_t' a 'int'; posible pérdida de datos
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(689,41): error C2664: 'HWND CreateDialogParamA(HINSTANCE,LPCSTR,HWND,DLGPROC,LPARAM)': el argumento 4 no puede convertirse de 'BOOL (__cdecl *)(HWND,UINT,WPARAM,LPARAM)' a 'DLGPROC'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(689,41): message : Ninguna de las funciones con este nombre en el ámbito coincide con el tipo de destino
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winuser.h(4988,1): message : vea la declaración de 'CreateDialogParamA'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(742,23): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(777,20): warning C4244: 'inicializando': conversión de 'size_t' a 'float'; posible pérdida de datos
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(795,29): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(832,59): warning C4311: 'conversión de tipo': truncamiento de puntero de 'HMENU' a 'UINT'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(832,59): warning C4302: 'conversión de tipo': truncamiento de 'HMENU' a 'UINT'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(835,59): warning C4311: 'conversión de tipo': truncamiento de puntero de 'HMENU' a 'UINT'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(835,59): warning C4302: 'conversión de tipo': truncamiento de 'HMENU' a 'UINT'
+C:\Users\rikim\Desktop\Estructura 2do. Avance\Estructura 2do. Avance\Main.cpp(899,20): warning C4244: 'inicializando': conversión de 'std::streamoff' a 'int'; posible pérdida de datos
