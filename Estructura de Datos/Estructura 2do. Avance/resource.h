@@ -111,11 +111,11 @@
 #define edc_descripccion_paquetes2      1103
 #define cmb_especialidades_mecanicos_citas 1104
 #define btn_regresar_packs2             1105
-#define IDC_BUTTON1                     1110
 #define IDC_LIST1                       1106
 #define Lista_packs_show                1107
 #define IDC_EDIT3                       1108
 #define list_after_ordenar_mecanicos    1109
+#define IDC_BUTTON1                     1110
 #define Pestania_1                      40003
 #define Pestania_2                      40004
 #define Pestania_3                      40006

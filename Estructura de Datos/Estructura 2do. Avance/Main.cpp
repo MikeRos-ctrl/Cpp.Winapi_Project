@@ -158,7 +158,8 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrevInstance, PSTR cmdLine, int s
     Cargar_Clientes_Bin();
     Cargar_Citas_Bin();
     
-    hPrincipal = CreateDialog(hInst, MAKEINTRESOURCE(Ventana_Principal), NULL, Principal);
+    //hMenu_General = CreateDialog(Global_Hinstance, MAKEINTRESOURCE(Ventana_General), NULL, Menu_General);
+    hPrincipal = CreateDialog(hInst, MAKEINTRESOURCE(Ventana_General), NULL, Menu_General);
     MSG msg;
     ShowWindow(hPrincipal, SW_SHOW);
 
@@ -181,50 +182,50 @@ BOOL CALLBACK Principal(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam) {
 
         case WM_COMMAND: {
 
-            if (LOWORD(wParam) == btn_ingresar && HIWORD(wParam) == BN_CLICKED) {
+            //if (LOWORD(wParam) == btn_ingresar && HIWORD(wParam) == BN_CLICKED) {
 
-                SendDlgItemMessageA(hWnd, edc_usuario, WM_GETTEXT, (WPARAM)MAX_PATH, (LPARAM)usuario);
-                SendDlgItemMessageA(hWnd, edc_contrasenia, WM_GETTEXT, (WPARAM)MAX_PATH, (LPARAM)contra);
+            //    SendDlgItemMessageA(hWnd, edc_usuario, WM_GETTEXT, (WPARAM)MAX_PATH, (LPARAM)usuario);
+            //    SendDlgItemMessageA(hWnd, edc_contrasenia, WM_GETTEXT, (WPARAM)MAX_PATH, (LPARAM)contra);
 
-                if (nodoinicial == NULL) {
-                    MessageBoxA(hWnd, "Aun No Existen Registros", "ERROR", MB_ICONERROR);
-                }
+            //    if (nodoinicial == NULL) {
+            //        MessageBoxA(hWnd, "Aun No Existen Registros", "ERROR", MB_ICONERROR);
+            //    }
 
-                else if (strcmp(usuario, "") == 0 || strcmp(contra, "") == 0) {
-                    MessageBoxA(hWnd, "Faltaron Campos Por Llenar", "ERROR", MB_ICONWARNING);
-                }
+            //    else if (strcmp(usuario, "") == 0 || strcmp(contra, "") == 0) {
+            //        MessageBoxA(hWnd, "Faltaron Campos Por Llenar", "ERROR", MB_ICONWARNING);
+            //    }
 
-                else
-                {
-                    bool NoExiste = true;
-                    while (nodoactual != NULL) {
+            //    else
+            //    {
+            //        bool NoExiste = true;
+            //        while (nodoactual != NULL) {
 
-                        if (strcmp(nodoactual->New_username,usuario) == 0 && strcmp(nodoactual->New_password, contra) == 0){ 
+            //            if (strcmp(nodoactual->New_username,usuario) == 0 && strcmp(nodoactual->New_password, contra) == 0){ 
 
                             MessageBoxA(hWnd, "Bienvenido Usuario", "Bienvenido", MB_RIGHT);
-                            NoExiste = false;
+                            //NoExiste = false;
                             hMenu_General = CreateDialog(Global_Hinstance, MAKEINTRESOURCE(Ventana_General), NULL, Menu_General);
                             ShowWindow(hMenu_General, SW_SHOW);
                             DestroyWindow(hWnd);
                             break;
 
-                        }
-                        nodoactual = nodoactual->next;
-                    }
-                    nodoactual = nodoinicial;
+            //            }
+            //            nodoactual = nodoactual->next;
+            //        }
+            //        nodoactual = nodoinicial;
 
-                    if (NoExiste == true) {
+            //        if (NoExiste == true) {
 
-                        MessageBoxA(hWnd, "VERIFIQUE SU INFORMACION", "USUARIO NO ENCONTRADO", MB_ICONERROR);
-                    }
-                }
-            }
+            //            MessageBoxA(hWnd, "VERIFIQUE SU INFORMACION", "USUARIO NO ENCONTRADO", MB_ICONERROR);
+            //        }
+            //    }
+            //}
 
-            if (LOWORD(wParam) == btn_registrarse && HIWORD(wParam) == BN_CLICKED) {
-                hRegistrarse = CreateDialog(Global_Hinstance, MAKEINTRESOURCE(Ventana_Para_Registrarse), NULL, Registrarse_Ventana);
-                ShowWindow(hRegistrarse, SW_SHOW);
-                DestroyWindow(hWnd);
-            }
+            //if (LOWORD(wParam) == btn_registrarse && HIWORD(wParam) == BN_CLICKED) {
+            //    hRegistrarse = CreateDialog(Global_Hinstance, MAKEINTRESOURCE(Ventana_Para_Registrarse), NULL, Registrarse_Ventana);
+            //    ShowWindow(hRegistrarse, SW_SHOW);
+            //    DestroyWindow(hWnd);
+            //}
 
         }break;
     }
@@ -390,16 +391,16 @@ BOOL CALLBACK Menu_General(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lparam) {
 
             if (LOWORD(wParam) == Pestania_2 && HIWORD(wParam) == BN_CLICKED) {
 
-                if (Pnodoinicial == NULL) {
+//                if (Pnodoinicial == NULL) {
 
-                    MessageBoxA(hWnd, "Se deben registrar Paquetes de Servicio Primero -.-", "ERROR", MB_ICONWARNING);
-                }
-                else
-                {
+    //                MessageBoxA(hWnd, "Se deben registrar Paquetes de Servicio Primero -.-", "ERROR", MB_ICONWARNING);
+          //      }
+       //         else
+            //    {
                     hRegistrar_Mecanicos = CreateDialog(Global_Hinstance, MAKEINTRESOURCE(Ventana_Registrar_Mecanicos), NULL, Registrar_Mecanicos);
                     ShowWindow(hRegistrar_Mecanicos, SW_SHOW);
                     DestroyWindow(hWnd);
-                }
+              //  }
             }
             
             if (LOWORD(wParam) == Pestania_3 && HIWORD(wParam) == BN_CLICKED) {
@@ -1694,17 +1695,17 @@ BOOL CALLBACK Registrar_Mecanicos(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPa
                 bool serepite = validarQueNoSeEmpalmenMecanicos(Turno, Especialidad);
                 int longitud = strlen(Celular);
 
-                if (ruta.compare("") == 0 || strcmp(NombreFull, "") == 0) {
-                    MessageBoxA(hWnd, "Falto Llenar Datos", "ERROR", MB_ICONWARNING);
-                }
+                //if (ruta.compare("") == 0 || strcmp(NombreFull, "") == 0) {
+                //    MessageBoxA(hWnd, "Falto Llenar Datos", "ERROR", MB_ICONWARNING);
+                //}
 
-                else if (longitud != 10) {
+                if (longitud != 10) {
                    MessageBoxA(hWnd, "Numero de Celular de 10 Digitos c: ", "ERROR", MB_ICONWARNING);
                 }
 
-                else if (contadorlunes % 2 == 0 && contadormartes % 2 == 0 && contadormiercoles % 2 == 0 && contadorjueves % 2 == 0 && contadorviernes % 2 == 0 && contadorsabado % 2 == 0 && contadordomingo % 2 == 0) {
-                    MessageBoxA(hWnd, "MINIMO TIENE QUE TRABAJAR 1 DIA -.-", "ERROR", MB_ICONWARNING);
-                }  
+                //else if (contadorlunes % 2 == 0 && contadormartes % 2 == 0 && contadormiercoles % 2 == 0 && contadorjueves % 2 == 0 && contadorviernes % 2 == 0 && contadorsabado % 2 == 0 && contadordomingo % 2 == 0) {
+                //    MessageBoxA(hWnd, "MINIMO TIENE QUE TRABAJAR 1 DIA -.-", "ERROR", MB_ICONWARNING);
+                //}  
 
                 else if (serepite == true) {
                     MessageBoxA(NULL, "YA EXISTE UN MECANICO EN DICHO HORARIO CON LA ESPECIALIDAD QUE REGISTRO", "ERROR DE DATOS", MB_ICONERROR);
@@ -1720,20 +1721,7 @@ BOOL CALLBACK Registrar_Mecanicos(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPa
                           strcpy_s(Mnodoinicial->Foto_Mecanicos, sRutaDelArchivoNP);
                           strcpy_s(Mnodoinicial->Especialidad_Mecanicos, Especialidad);  
                           strcpy_s(Mnodoinicial->Num_Celular_Mecanicos, Celular);
-                          if (contadorlunes % 2 != 0)
-                              Mnodoinicial->dia_lunes = true;
-                          if (contadormartes % 2 != 0)
-                              Mnodoinicial->dia_martes = true;
-                          if (contadormiercoles % 2 != 0)
-                              Mnodoinicial->dia_miercoles= true;
-                          if (contadorjueves % 2 != 0)
-                              Mnodoinicial->dia_jueves = true;
-                          if (contadorviernes % 2 != 0)
-                              Mnodoinicial->dia_viernes = true;
-                          if (contadorsabado % 2 != 0)
-                              Mnodoinicial->dia_sabado = true;
-                          if (contadordomingo % 2 != 0)
-                              Mnodoinicial->dia_domingo = true;
+                          
                           Mnodoinicial->idMecanicos = Global_Mecanicos_Id++;
                           Mnodoinicial->Mprev = NULL;
                           Mnodoinicial->Mnext = NULL;
@@ -1753,24 +1741,11 @@ BOOL CALLBACK Registrar_Mecanicos(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lPa
                             strcpy_s(Mnodoactual->Foto_Mecanicos, sRutaDelArchivoNP);
                             strcpy_s(Mnodoactual->Num_Celular_Mecanicos, Celular);
                             strcpy_s(Mnodoactual->Especialidad_Mecanicos, Especialidad);
-                            if (contadorlunes % 2 != 0)
-                                Mnodoactual->dia_lunes = true;
-                            if (contadormartes % 2 != 0)
-                                Mnodoactual->dia_martes = true;
-                            if (contadormiercoles % 2 != 0)
-                                Mnodoactual->dia_miercoles = true;
-                            if (contadorjueves % 2 != 0)
-                                Mnodoactual->dia_jueves = true;
-                            if (contadorviernes % 2 != 0)
-                                Mnodoactual->dia_viernes = true;
-                            if (contadorsabado % 2 != 0)
-                                Mnodoactual->dia_sabado = true;
-                            if (contadordomingo % 2 != 0)
-                                Mnodoactual->dia_domingo = true;
+                          
                             Mnodoactual->idMecanicos = Global_Mecanicos_Id++;
                             Mnodoactual->Mnext = NULL;
                             Mnodoactual = Mnodoinicial;
-                            MessageBoxA(NULL, "Nuevo Mecanico Registrado", "NUEVO MECANICO", MB_OK);
+                            MessageBoxA(NULL, "Nuevo Usuario Registrado", "NUEVO Usuario", MB_OK);
                       }
 
                     contadorlunes = 0;
@@ -2250,19 +2225,19 @@ void InsertarMenu(HWND hWnd) {
     HMENU hMenu = CreateMenu();
 
     AppendMenu(Columna1, MF_STRING, Pestania_1, "Registrar");
-    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna1, "Paquetes de Servicio");
+    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna1, "Registrar Productos");
 
     AppendMenu(Columna2, MF_STRING, Pestania_2, "Registrar");
-    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna2, "Registro de Mecanicos");
+    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna2, "Registro de Usuarios");
 
-    AppendMenu(Columna3, MF_STRING, Pestania_3, "Registrar");
-    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna3, "Registro de Clientes");
+   // AppendMenu(Columna3, MF_STRING, Pestania_3, "Registrar");
+    //AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna3, "Registro de Clientes");
     
-    AppendMenu(Columna4, MF_STRING, Pestania_4, "Registrar");
-    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna4, "Registro de Citas");
+    //AppendMenu(Columna4, MF_STRING, Pestania_4, "Registrar");
+    //AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna4, "Registro de Citas");
 
-    AppendMenu(Columna5, MF_STRING, Pestania_5, "Ver");
-    AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna5, "Consultar Citas");
+    //AppendMenu(Columna5, MF_STRING, Pestania_5, "Ver");
+    //AppendMenu(hMenu, MF_STRING | MF_POPUP, (UINT)Columna5, "Consultar Citas");
 
     AppendMenuA(Columna6, MF_STRING, pestania_6_1, "Quick Sort");
     AppendMenu(Columna6, MF_SEPARATOR, 0, NULL);
